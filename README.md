@@ -25,3 +25,4 @@ Requisitos para poder ver el resultado final del proyecto.
 
 ### ✏️ Diagrama Fisico
 
+<img src="./docs/img/diagrama-fisico.png">
