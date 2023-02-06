@@ -1,7 +1,7 @@
 -- Eliminamos la base de de datos en caso de que exista y se vuelve a crear
-CREATE OR REPLACE DATABASE metro_cdmx CHARACTER SET = 'utf8mb4' COLLATE = 'utf8mb4_unicode_ci';
+CREATE OR REPLACE DATABASE metro CHARACTER SET = 'utf8mb4' COLLATE = 'utf8mb4_unicode_ci';
 
-USE metro_cdmx;
+USE metro;
 
 
 CREATE TABLE IF NOT EXISTS `trains_types` (
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `trains_lines` (
     `train_serial_number` VARCHAR(10) NOT NULL,
     `line_id` BIGINT(20) UNSIGNED NOT NULL,
     `start_date` DATE NOT NULL,
-    `end_date` DATE NOT NULL,
+    `end_date` DATE NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `deleted_at` TIMESTAMP NULL,
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `lines_stations` (
     `station_id` BIGINT(20) UNSIGNED NOT NULL,
     `line_id` BIGINT(20) UNSIGNED NOT NULL,
     `start_date` DATE NOT NULL,
-    `end_date` DATE NOT NULL,
+    `end_date` DATE NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `deleted_at` TIMESTAMP NULL,
