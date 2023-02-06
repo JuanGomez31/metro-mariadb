@@ -2,6 +2,9 @@
 
 Proyecto de creación de base de datos del metro usando MariaDB o MySQL
 
+##  🟢 Estado
+
+Activo a falta de generar informe de proyecto.
 
 ## ⚙️ Requisitos del proyecto
 
