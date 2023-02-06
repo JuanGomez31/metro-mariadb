@@ -1,6 +1,6 @@
-# Metro Mexico - MariaDB
+# Metro - MariaDB
 
-Proyecto de creación de base de datos del metro de mexico usando mariadb o mysql
+Proyecto de creación de base de datos del metro usando MariaDB o MySQL
 
 
 ## ⚙️ Requisitos del proyecto
